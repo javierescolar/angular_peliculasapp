@@ -1,0 +1,37 @@
+<h1>{{titulo}}</h1>
+<hr>
+<div class="row" *ngIf="peliculas">
+  <div class="col-6">
+    <div class="row">
+      <div class="col-12 puntero" [routerLink]="['/pelicula',peliculas[0].id,'home']">
+           <img [src]="(peliculas[0] | peliculaImagen )" alt="" class="img-fluid">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 puntero"  [routerLink]="['/pelicula',peliculas[1].id,'home']">
+        <img [src]="(peliculas[1] | peliculaImagen )" alt="" class="img-fluid">
+      </div>
+      <div class="col-6 puntero"  [routerLink]="['/pelicula',peliculas[2].id,'home']">
+        <img [src]="(peliculas[2] | peliculaImagen )" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="row">
+      <div class="col-6 puntero"  [routerLink]="['/pelicula',peliculas[3].id,'home']">
+        <img [src]="(peliculas[3] | peliculaImagen )" alt="" class="img-fluid">
+      </div>
+      <div class="col-6 puntero"  [routerLink]="['/pelicula',peliculas[4].id,'home']">
+      <img [src]="(peliculas[4] | peliculaImagen )" alt="" class="img-fluid">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 puntero"  [routerLink]="['/pelicula',peliculas[5].id,'home']">
+          <img [src]="(peliculas[5] | peliculaImagen )" alt="" class="img-fluid">
+      </div>
+    </div>
+
+  </div>
+</div>
+<br><br>
